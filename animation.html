@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+             .s{
+                height:100vh;
+                background-image: url(image/city.png);
+                position: relative;
+                background-size: contain;
+                overflow: hidden;
+                background-repeat: repeat-x;
+                background-position: 0 0;
+                animation: caranimation 7ms infinite ;
+                animation-timing-function:linear ;
+             }
+             @keyframes caranimation{
+                from{
+                    background-position: 100% 0;
+                    
+                }
+                to{
+                    background-position: 0 0;
+                }
+             }
+             .z{
+                position: absolute;
+                bottom: 50px;
+             } 
+             .zz{
+                position:absolute;
+                bottom: 30px;
+                left: 1000px;
+             }
+             .zzz{
+                position: absolute;
+                bottom: 60px;
+                left: 500px;
+             }         
+        </style>
+    </head>
+
+
+
+
+
+
+    
+    <body>
+        <div class="s">
+            <img src="image/car22.png"  class="z"      alt="">
+            <img src="image/carrr.png" class="zz" alt="">
+            <img src="image/bike11.png" class="zzz" alt="">
+
+        </div>
+    </body>
+</html>
