@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#333,#000);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h6{
+    color: aqua;
+    font-size: 1cm;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.z{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+   
+
+}
+.z div{
+    position: absolute;
+    display: block;
+}
+.z div:nth-child(1){
+    left: 20%;
+    animation: animate 10s linear infinite;
+   
+}
+.z div:nth-child(2){
+    left: 40%;
+    animation: animate 5s linear infinite;
+}
+.z div:nth-child(3){
+    left: 0%;
+    animation: animate 15s linear infinite;
+   
+}
+.z div:nth-child(4){
+    left: 10%;
+    animation: animate 12s linear infinite;
+}
+.z div:nth-child(5){
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.z div:nth-child(6){
+    left: 80%;
+    animation: animate 18s linear infinite;
+   
+}
+.z div:nth-child(7){
+    left: 10%;
+    animation: animate 8s linear infinite;
+}
+.z div:nth-child(8){
+    left: 45%;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        top: -30;
+        transform: translatex(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+
+    }
+    20%{
+        transform: translatex(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translatex(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translatex(-20px) rotate(180deg);
+    }
+    80%{
+        transform: translatex(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translatex(-20px) rotate(180deg);
+    }
+}
+.one{
+    transform: scale(2) rotatey(170deg);
+    filter:blur(2px);
+}
+.two{
+    transform: scale(0.5) rotatex(170deg);
+    filter:blur(4px);
+}
